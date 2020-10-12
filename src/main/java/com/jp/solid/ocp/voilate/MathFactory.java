@@ -5,8 +5,8 @@ import com.jp.solid.ocp.misc.IMathOperation;
 import com.jp.solid.ocp.misc.Subtraction;
 
 public class MathFactory {
-    public static IMathOperation operation(String operandName) {
-        IMathOperation operation = null;
+    public static IMathOperation<Integer,Integer> operation(String operandName) {
+        IMathOperation<Integer,Integer> operation = null;
         switch (operandName) {
             case "ADD":
                 operation = new Addition();
